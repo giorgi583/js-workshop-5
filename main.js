@@ -27,13 +27,13 @@ console.log(names);
 let active = students.filter((element) => element.isActive);
 console.log(active);
 // 3
-for (let i = 0; i < students.length; i++) {
-  if (students[i].isActive) {
-    console.log(`${students[i].name} aris aqtiuri`);
+students.forEach (element => {
+  if (element.isActive) {
+    console.log(`${element.name} aris aqtiuri`);
   } else {
-    console.log(`${students[i].name} ar aris aqtiuri`);
+    console.log(`${element.name} ar aris aqtiuri`);
   }
-}
+})
 
 // 4
 let isMoreThan50 = students.every(
